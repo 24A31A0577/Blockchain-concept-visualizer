@@ -1,1 +1,34 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+<title>module3</title>
+<link rel="stylesheet" href="m1.css">
+</html>
+<body>
+<h1>Hashing</h1>
+<p>Blockchain hashing is the cryptographic process of converting input data of any size into a fixed-length string of numbers and letters, creating a unique digital fingerprint. It ensures data integrity and immutability by producing a distinct hash for any alteration in the input (avalanche effect). SHA-256 is a popular algorithm, used in Bitcoin.</p>
+<h3>Key Components of Blockchain Hashing</h3>
+<p>
+<b>Deterministic:</b> The same input always produces the same output.<br>
+<b>Irreversible (One-way):</b> It is computationally infeasible to determine the original input from the hash.<br>
+<b>Collision-Free:</b> It is extremely unlikely that two different inputs produce the same hash.<br>
+<b>Avalanche Effect:</b> A minor modification in input data significantly alters the resulting hash.<br>
+<b>Fixed Output Size:</b> Regardless of input size, the output hash length remains constant (e.g., 256-bit).<br> </p>
+<h3>How Hashing Works in Blockchain</h3>
+<p>
+<b>Linking Blocks:</b> Each block contains the cryptographic hash of the previous block, creating a secure "chain". If one block is tampered with, its hash changes, breaking the link to all subsequent blocks.<br>
+<b>Data Integrity:</b> Participants hash transaction data and compare it to the stored hash. If they match, the data is verified as untampered.<br>
+<b>Proof of Work (PoW):</b> In systems like Bitcoin, miners solve complex mathematical puzzles involving hashes to create new blocks and secure the network.<br></p>
+<h3>Common Hashing Algorithms</h3>
+<p>
+<b>SHA-256 (Secure Hash Algorithm 256-bit):</b> Extensively used in Bitcoin.<br>
+<b>Keccak-256:</b> Used in Ethereum.<br>
+<b>SHA-3 & Blake2:</b> Other secure cryptographic alternatives.<br></p>
+<iframe width="400"height="250"
+src="https://www.youtube.com/embed/bBC-nXj3Ng4"
+allowfullscreen>
+</iframe>
+<br><br>
+<a href="modules.html">⬅ Back to modules</a>
+</body>
+</html>
