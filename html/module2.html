@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="m1.css">
+</head>
+<body>
+<h1>Block Structure</h1>
+<p>A block in a blockchain is a digital container that stores data—most commonly transaction records—and links them together in a chronological chain. Think of it as a page in a decentralized digital ledger, where once a page is full and validated, it is sealed, cryptographically linked to the previous page, and cannot be altered. </p>
+<p>
+The structure of a block is generally divided into two main parts: the Block Header and the Block Body (or Transactions). </p>
+<h3>1.Block Header(Metadata)</h3>
+<p>
+The header contains metadata about the block. It is crucial for security, validation, and linking to the previous block. It has a fixed size (e.g., 80 bytes in Bitcoin). <br>
+<b>Previous Block Hash:</b> A 32-byte hash (using a cryptographic algorithm like SHA-256) of the previous block's header. This is the "chaining" mechanism, linking the current block securely to the one before it.<br>
+<b>Merkle Root:</b> A 32-byte hash that acts as a summary of all transactions in the block body. It is calculated by hashing pairs of transactions recursively until only one hash remains. This makes verifying transactions very efficient.<br>
+<b>Timestamp:</b> The time when the block was mined (in Unix time).<br>
+<b>Nonce:</b> A 4-byte arbitrary number used in Proof-of-Work (PoW) consensus algorithms. Miners change this value repeatedly to satisfy the "difficulty" target to mine a block.<br>
+<b>Bits(Difficulty Target):</b> A 4-byte field determining how difficult it is to mine a block (what the hash must be lower than).<br>
+<b>Version:</b> A 4-byte field signaling the version of the block validation rules the node is using. </p>
+<h3>2.Block Body(Data)</h3>
+<p>
+The block body contains the actual data payload.<br>
+<b>Transaction Counter:</b> A number indicating how many transactions are included.<br>
+<b>Transactions:</b> The list of raw transaction data (sender, receiver, amount, signature, etc.).<br>
+<b>Coinbase Transaction:</b> The very first transaction in a block. It is a special transaction created by the miner to collect the block reward (newly minted coins) and transaction fees. It does not have a sender.<br>
+</p>
+<iframe width="400" height="250"
+src="https://www.youtube.com/embed/qOVAbKKSH10">
+</iframe>
 
+<br><br>
+<a href="modules.html">⬅ Back to Modules</a>
+
+</body>
+</html>
