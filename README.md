@@ -217,6 +217,12 @@ By using this platform, users will be able to:
 
 ---
 
+## 🙏 Acknowledgment
+
+We acknowledge the use of ChatGPT as a supportive tool in brainstorming ideas, enhancing content quality, and improving the overall development process of this project.
+
+---
+
 ## 📄 License
 
 This project was developed for educational/lab purposes. Not intended for commercial use.
